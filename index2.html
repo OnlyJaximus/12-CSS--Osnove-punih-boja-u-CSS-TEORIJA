@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osnove punih boja u CSS jeziku</title>
+    <style>
+        .text{
+            font-size: 22px;
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        .holder{
+            display: flex;
+            width: 450px;
+            height: 150px;
+            position:absolute;
+            top:0px;
+            left: 0px;
+        }
+        .kvadrat{
+            /* border: 2px solid black; */
+            /* width: 150px;
+            height: 150px; */
+            /* display: inline-block; */
+            flex-grow: 1;
+        }
+
+        /* .boja1{
+            background-color: rgb(180, 180, 10);
+        } */
+
+           .boja1{
+            background-color: rgba(180, 180, 10, 75%);
+        }
+
+
+        .boja2{
+            /* prodivdnost od 0 do 255  00 je 100% providno a FF znaci najjaca moguca boja  */
+            background-color: #DD0132E1;
+        }
+
+        /* .boja3{
+            background-color: hsl(180, 20%,30%);
+        } */
+
+          .boja3{
+            /* od 0 do 100 % za prozirnost kao cetvrta vrednost */
+            background-color: hsla(180, 20%,30%, 40%);
+        }
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="text">
+        Lorem ipsum dolorem sit namet...
+    </div>
+    <div class="holder">
+        <div class="kvadrat boja1">A</div>
+        <div class="kvadrat boja2">B</div>
+        <div class="kvadrat boja3">C</div>
+    </div>
+ 
+</body>
+</html>
